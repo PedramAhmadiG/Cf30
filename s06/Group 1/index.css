@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: Open Sans;
+}
+.container{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.yellow{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #FFD166;
+    margin: 50px 0;
+}
+.yellow div{
+    background-color:#EF476F ;
+    color: #323031;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 12px;    
+}
+.green{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4AA96C;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+.green div {
+    background-color: #FFD166;
+    color: #323031;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 12px;
+}
+.box{
+    background-color: #2D6CDF;
+    padding: 50px;
+}
+.white{
+    background-color:#F0F0F0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 133px;
+    border-radius: 8px;
+}
+.white div {
+    background-color: #845EC2;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    color: #F0F0F0;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 12px;
+}
+.grow-1{
+    flex-grow: 1;
+}
+.grow-2{
+    flex-grow: 10;
+}
+.grow-3{
+    flex-grow: 20;
+}

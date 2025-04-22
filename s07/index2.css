@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    width: 1440px;
+    z-index: 99;
+    background-color: #e6eaeb96;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+    margin: 20px 0;
+}
+.nav a:hover{
+    color: #04020273;
+}
+.nav a{
+    text-decoration: none;
+    font-family: Vazirmatn;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+.logo{
+    margin: 12px 0;
+}
+.hero{
+    position: relative;
+    top: 127px;
+    right: 106px;
+    width: 1265px;
+    height: 588px;
+}
+.text pre{
+    position: absolute;
+    font-family: Lalezar;
+    font-weight: 400;
+    font-size: 300px;
+    line-height: 300px;
+    letter-spacing: 0%; 
+    color: #346E16;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+.orange{
+    position: absolute;
+    background-color: #F4B10D;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    left: 360px;
+    top: 71px;
+}
+.lemon-1 img{
+    position: absolute;
+    opacity: 100;
+    top: 87px;
+    left: 377px;
+    opacity: 20%;
+}
+.bottle img{
+    position: absolute;
+    left: 487px;
+    top: -15px;
+    z-index: 15; 
+}
+.mint img{
+    position: absolute;
+    rotate:-20deg ;
+    top: 147px;
+    left: 468px;
+    z-index: 30;
+}
+.lemon-2 img{
+    position: absolute;
+    right: 456px;
+    top: 219px;
+    rotate: -15deg;
+    z-index: 11;
+}
+.lime img{
+    position: absolute;
+    top: 168px;
+    left: 419px;
+    z-index: 2;
+}
+.kiwi img{
+    position:absolute;
+    right: 520px;
+    top: 337px;
+    z-index: 20;
+    rotate: 35deg;
+}
+.buy{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 12px;
+    top: 327px;
+    right: 63px;
+}
+.buy h2{
+    font-family: Vazirmatn;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #00000066;
+}
+.buy-link a:hover{
+    background-color: #040202bc;
+}
+.buy-link a{
+    background-color: #040202;
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-family: Vazirmatn;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: right;
+    display: flex;
+    gap: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.info{
+    position: absolute;
+    top: 327px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 250px;
+    padding-right: 12px;
+}
+.info-text{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 29px;
+}
+.info-text h2{
+    font-family: Vazirmatn;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #000000;
+}
+.info-text p {
+    font-family: Vazirmatn;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #00000066;
+}
+.flavors{
+    margin-top: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flavors h2{
+    font-family: Lalezar;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #040202;
+}
+.cover{
+    background-color: #040202;
+    width: 1200px;
+    border-radius: 90px;
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 99px;
+    margin-bottom: 160px;
+}
+.flavors-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    margin-top: -70px;
+}
+.flavors-items img{
+    width: 100px;
+    height: 100px;
+}
+.flavors-items div{
+    background-color: #346E16;
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    border-radius: 50%;
+    margin: 0 25px 12px 25px;
+}
+.flavors-items h3{
+    font-family: Vazirmatn;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.flavors-items p{
+    font-family: Vazirmatn;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center; 
+    color: #FFFFFF;
+    opacity: 60%;
+}
+.shops{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.shops h3{
+    font-family: Lalezar;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #040202;        
+}
+.shops img{
+    width: 100px;
+    height: 100px;
+}
+.shop-1{
+    display: flex;
+    align-items: center;
+    gap: 163px;
+}
+.shop-1 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shop-2{
+    display: flex;
+    align-items: center;
+    gap: 367px;
+}
+.shop-2 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shops h4{
+    font-family: Vazirmatn;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #000000;    
+}
+.footer{
+    font-family: Vazirmatn;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 129px;
+    margin-bottom: 32px;
+    color: #000000;     
+}

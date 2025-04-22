@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+@font-face {
+    font-family: Times New Roman;
+    src: url(font/times.ttf);
+}
+body{
+    background: linear-gradient(to right, #ffffff 50%,#F8F8F8 50%);
+}
+.container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    gap: 38px;
+}
+.contact {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 90px;
+}
+.contact-text{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #B8B8B8;
+}
+.contact-text-2{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #B8B8B8;
+}
+.contact-link{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #B8B8B8;
+    text-decoration: none;
+}
+.contact-link:hover{
+    color: #89aee6;
+}
+.information{
+    margin-top: 131px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 347px;
+}
+.text-1{
+    display: flex;
+    flex-direction: column;
+}
+.text-1 h2{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 12px 0;
+}
+.text-1 div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 6px 0;
+}
+.t-1{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #B8B8B8;
+}
+.t-2{
+    font-family: Times New Roman;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    color: #333333;
+}
+.t-3{
+    font-family: Times New Roman;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #B8B8B8;
+    text-decoration: none;
+}
+.t-3 a:hover{
+    color: #89aee6;
+}
+.links{
+    display: flex;
+    flex-direction: column; 
+    width: 264px;
+}
+.links h2{
+    margin: 12px 0;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.icons{
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+.icons div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:6px;
+    padding: 6px;
+
+}
+.icons h4{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #B8B8B8;
+}
+.hero{
+    margin-top: 81px;
+    width: 415px;
+    margin-left: 103px;
+}
+.about-me{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+}
+.about-me h1{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: 0%;
+    color: #333333;
+}
+.about-me h1 span{
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 0%;
+    opacity:80%;
+    color: #333333;
+}
+.job{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #F8F8F8;
+    background-color: #333333;
+    padding: 4px 16px;
+}
+.my-links{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.my-links a{
+    text-decoration: none;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #B8B8B8;
+    padding: 12px 12px 0 0;
+}
+.my-links a:hover{
+    color: #89aee6;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    width:252px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.skills h3{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 18px;
+}
+.html,.css,.javascript,.vue,.photoshop{
+    display: flex; 
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    align-items: center;
+}
+.lvl{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.none{
+    width: 10px;
+    height: 10px;
+    background-color: #33333340;
+    border-radius: 50%;
+}
+.add{
+    width: 10px;
+    height: 10px;
+    background-color: #333333;
+    border-radius: 50%;
+}
+.skills h4{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #333333;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about h3{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 12px;
+}
+.about div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 6px 0;
+}
+.about h4{
+    font-family: Times New Roman;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #333333;
+}
+.about h5{
+    font-family: Times New Roman;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #B8B8B8;
+}
+.about p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #B8B8B8;
+}
+.footer h3{
+    margin: 50px 0 12px 0;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 6px 0;
+}
+.footer h5{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #B8B8B8;
+}
+.footer p{
+    font-family: Times New Roman;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #333333;
+}
+.footer h6{
+    font-family: Times New Roman;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #B8B8B8;
+}
+

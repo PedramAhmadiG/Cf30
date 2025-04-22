@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --time: 300ms;
+    --delay: 150ms;
+    --background-1: red ;
+    --background-2: blue ;
+}
+.hi, 
+.hi2{
+    width: 100vw;
+    height: 49vh;
+    animation-name: cup;
+    animation-duration: var(--time);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 150px;
+    margin-top: 1vh;
+    box-shadow: 1px 1px 50px 10px var(--background-2);
+}
+.hi2{
+    animation-delay: var(--delay);
+    box-shadow: 1px 1px 50px 10px  var(--background-1);
+
+}
+@keyframes cup{
+    0%{
+        background: var(--background-2);
+    }
+    100%{
+        background: var(--background-1);
+        box-shadow: none;
+        width: 98vw;
+        margin-left: 10px;
+        height: 47vh;
+    }
+}

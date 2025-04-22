@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+@media (width <= 980px ){
+    .container{
+        background: red;
+        transform: all 2s;
+    }
+    
+}
+body{
+    font-family: roboto;
+}
+.container{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav{
+    margin: 36px 0;
+    display: flex;
+}
+.nav-list{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.nav-items{
+    display: inline-block;
+}
+.nav-links{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 16px 12px;
+    font-size: 18px;
+    font-weight: 400 ;
+    line-height: 28px;
+}
+.nav-links:hover{
+    color: gray;
+}
+.button{
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 463px;
+}
+.button-link{
+    background-color: #D8460B;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.button-link:hover{
+    background-color: #6c1e01;
+}
+.learn-spanish{
+    background-color: #F2624F;
+    border-radius: 40px;
+    height: 480px;
+    margin-top: 80px;
+    display: flex;
+}
+.learn-text{
+    width: 572px;
+    display: inline-block;
+}
+.learn-h1{
+    color: #FFFFFF;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 900;
+    margin: 121.5px 12px 24px 32px;
+}
+.learn-p{
+    display: inline-block;
+    color: #FFFFFF;
+    margin: 0 12px 24px 32px;
+}
+.button-link-1{
+    background-color: #D8460B;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.button-link-1:hover{
+    background-color: #6c1e01;
+}
+.learn-link{
+    display: inline-block;
+    margin: 24px 402px 121.5px 32px;
+}
+.learn-img{
+    display: inline-block;
+    margin: 16px 0 0 0;
+}
+.countries{
+    margin-top: 80px;
+}
+.countries-h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.countries-p{
+    margin-top: 12px;
+    color: #929292;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+
+}
+.countries-1{
+    display: flex;
+}
+.mexcio,.Colombia,.spain,.argentina{
+    width: 233px;
+    height: 279px;
+    background-color: #F6F6F2;
+    border-radius: 36px;
+    text-align: center;
+    margin-top: 12px;
+}
+.Colombia,.spain,.argentina{
+    margin-left: 16px;
+}
+
+.m-pic,.c-pic,.s-pic,.a-pic{
+    padding: 16px 8.25px 24px 8.25px;
+}
+.m-text{
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+
+}
+.a-text{   
+    margin-bottom: 16px; 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #929292;
+}
+.learn-spanish-2{
+    background-color:#F9F2DB ;
+    margin-top: 80px;
+    display: flex;
+}
+.learn-text-button{
+    width: 980px;
+    height: 80px;
+    margin: 56px auto;
+    display: flex;
+}
+.learn-h2{
+    width: 572px;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.button-1{
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 270px;
+}
+.button-link-2{
+    background-color: #D8460B;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.button-link-2:hover{
+    background-color: #6c1e01;
+}
+.text-h3{
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.text-p{
+    margin-top: 12px;
+    color: #929292;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+
+}
+.p-link:hover{
+    color: #7a2706;
+}
+.p-link{
+    color: #D8460B;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+}
+.footer{
+    background-color: #F6F6F2;
+    display: flex   ;
+    margin-top: 80px;
+}
+.footer-text{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 30px 0;  
+}

@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #474C59;
+}
+header h1{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #D9D1C7;
+    padding: 24px;
+}
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero{
+    padding: 163px 0 236px 0;
+}
+.hero-img{
+    position: relative;
+    perspective: 20cm;
+}
+.hero-img .img-1{
+    position: absolute;
+    z-index: 2;
+    transition: all 0.6s;
+    transform-origin: left;
+
+}
+.hero-img:hover .img-1{
+    transform: rotatey(-15deg);
+}
+.hero-img .img-2{
+    position: absolute;
+    top: 10px;
+    left: 107px;
+    transition: all 0.6s;
+    transform-origin: center center;
+}
+.hero-img:hover .img-2{
+    transform: translateX(83px) rotate(56.3deg);
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    margin-left: 500px;
+}
+.hero-text h2{
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #D9D1C7;        
+}
+.hero-text h3{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #D9D1C780;
+}
+.hero-text h3 span{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;    
+}
+.hero-text p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #D9D1C766;
+}
+.hero-text a{
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #131026;
+    display: flex;
+    align-items: center;   
+    gap: 15px;
+    padding: 12px 24px;
+    border: 2px solid #131026;
+    border-radius: 4px; 
+    transition: all 500ms;
+}
+.hero-text a:hover{
+    background: #131026;
+    color: #D9D1C7;
+}
+.hero-text a:hover .spotify{
+    border-color: #D9D1C7;
+}
+.spotify{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #131026;
+    display: flex;
+    transition: all 500ms;
+}
+.line-1 {
+    position: absolute;
+    width: 13.3px;
+    height: 3.5px;
+    box-shadow: 0px 2px  inset;
+    border-radius: 50%; 
+    rotate: 5deg;
+    top: 6px;
+    left: 4px;
+}
+  
+.line-2{
+    position: absolute;
+    width: 11.5px;
+    height: 3px;
+    box-shadow: 0px 1.8px  inset;
+    border-radius: 50%;
+    top: 9px;
+    rotate: 5deg;
+    left: 4.5px;
+}
+.line-3{
+   position: absolute;
+   width: 9.5px;
+   height: 2.4px;
+   box-shadow: 0px 1.6px  inset;
+   border-radius: 50%;  
+   top: 12px;
+   left: 5px;
+   rotate: 5deg;
+}
+.tracks{
+    margin-top: 60px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+}
+.tracks h2{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #D9D1C7;
+}
+.tracks ol{
+    list-style: decimal-leading-zero;
+}
+.tracks ol li::marker{
+    color: #D9D1C780;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+}
+.tracks li div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 24px;
+    line-height: 36px;
+    padding:6px;
+}
+.tracks li div::before{
+    content: ' ';
+    border-bottom: dashed #D9D1C726 1px;
+    display: block;
+    flex-grow: 1;
+    order: 2;
+}
+.tracks li .name{
+    flex-shrink: 0;
+    color: #D9D1C7;
+    font-family: 'lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    order: 1;
+}
+.tracks li .time{
+    font-family: 'lato';
+    font-size: 20px;
+    font-weight: 400;
+    color: #D9D1C780;
+    order: 3;
+}
+.albums{
+    padding: 60px 0;
+}
+.albums h2{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #D9D1C7;
+    margin-bottom: 24px;    
+}
+.albums .al div:hover{
+    background-color: #0000004D;
+}
+.albums .al div{
+    background-color: #0000001A;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.albums .al{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+.albums .al div img{
+    box-shadow: 0 0 10px 0 #00000080;
+}
+.albums .al div h3{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #D9D1C7; 
+    margin-top: 16px;  
+}
+footer {
+    padding: 24px 10px;
+    background-color: #0000001A;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #131026;      
+}
+footer span{
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;    
+}
+@media( width <= 950px){
+    .container{
+        width: 312px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero{
+        padding: 30px 0 0 0;
+    }
+    .hero .hero-img{
+        margin-bottom: 270px;
+    }
+    .hero .img-1{
+        width: 241.86px;
+        height: 241.86px;
+    }
+    .hero .img-2{
+        width: 225.73px;
+        height: 225.73px;
+        left: 86px;
+    }
+    .hero .hero-img:hover .img-2{
+        left: 0;
+    }
+    .hero .hero-text{
+        margin: 0;
+        align-items: stretch;
+    }
+    .hero .hero-text h2{
+        font-family: Lato;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;           
+    }
+    .hero .hero-text p{
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;           
+    }
+    .hero .hero-text a{
+        padding-left: 80px;
+        background-color: #131026;
+        color: #D9D1C7;
+    }
+    .hero .hero-text a .spotify{
+        border-color: #D9D1C7;
+    }
+    .hero .hero-text a:hover .spotify{
+        border-color: #131026;
+    }
+    .hero .hero-text a:hover{
+        background-color: #474C59;
+        color: #131026;
+    }
+    .tracks{
+        margin: 60px 0;
+        padding: 0;
+    }
+    .tracks ol{
+        padding-left: 25px;
+    }
+    .tracks li .name{
+        font-weight: 700;
+        font-size:18px ;
+    }
+    .tracks h2{
+        font-size: 26px;
+    }
+    .tracks ol li::marker{
+        font-size: 16px;
+    }
+    .albums{
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .albums h2{
+        font-size: 26px;             
+    }
+    .albums .al{
+        gap: 12px;
+    }
+    .albums .al div{
+        width: 150px;
+        padding: 16px 8px;
+    }
+    .albums .al div img{
+        width: 118px;
+        height: 118px;
+    }
+    .albums .al div h3{
+        font-family: Lato;
+        font-weight: 700;
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hero{
+    position: relative;
+    height: 808px;
+    margin-bottom: 120px;
+}
+#hero .bigbg{
+    position: absolute;
+    z-index: 1;
+}
+#hero .bg{
+    position: absolute;
+    z-index: 3;
+}
+#hero h1 {
+    position: absolute;
+    color: #FDFCFA;
+    font-family: vazirmatn;
+    font-weight: 400;
+    font-size: 90px;
+    letter-spacing: 0%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    right: 120px;
+    top: 238px;
+    z-index: 2;   
+}
+#hero h1 .tehran{
+    font-family: vazirmatn;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 120px;
+    letter-spacing: 0%;
+    
+}
+#information{
+    margin-right: 120px;
+    display: flex;
+    align-items: end;
+    margin-bottom: 120px;
+}
+#information .right{
+    position: relative;
+}
+#information .right .box{
+    height: 115px;
+    background-color: #ECEBE6;
+    border-bottom-right-radius: 24px;
+}
+#information .right .text{
+    position: absolute;
+    z-index: 5;
+    top: 381px;
+    right: 40px;
+    left: 110px;
+}
+#information .right .text span{
+    font-family: Vazirmatn;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FDFCFA99;  
+}
+#information .right .text .text-1{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #FDFCFA;
+}
+#information .right .text .text-2{
+    font-weight: 400;
+    font-size: 18px;
+    color: #FDFCFACC;   
+}
+#information .left .text{
+    margin: 0 162px 110px 120px;
+    height: 277px;
+    width: 638px;
+}
+#information .left .text div{
+    display: flex;
+    gap: 95px;
+    align-items: center;
+}
+#information .left .text div p{
+    font-family: Vazirmatn;
+    font-weight: 400;
+    font-size: 20px;
+    line-height:30px;
+    letter-spacing: 0%;
+    text-align: justify;
+    color: #00000066;
+        
+}
+#information .left .text div span{
+    font-family: lalezar;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100px;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: middle;
+    
+}
+#information .left .text .text-1 p{
+    text-align: left;
+}
+#information .left .text .text-2 p{
+    font-family: vazirmatn;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 80px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;  
+}
+#information .left a:hover{
+    background-color: #3c8da1;
+    scale: 1.02;
+    transition: .4s;
+}
+#information .left a{
+    font-family: Vazirmatn;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: underline;
+    color: #FDFCFA;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 40px 50px;
+    background-color: #346671;    
+}
+#date {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+#date .date-1{
+    width: 600px;
+    background-color: #ECEBE6;
+    padding: 24px 32px;
+    border: 1px solid #D0D0D0;
+    border-radius: 24px;
+    font-family: vazirmatn;
+}
+#date .date-1 div{
+    padding: 24px 0;
+}
+#date .date-1 div h4{
+    font-family: Vazirmatn;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+        
+}
+#date .date-1 div span{
+    font-family: Vazirmatn;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    margin-right: 12px;   
+}
+#date .date-1 h3{
+    color: #00000066;
+}
+#date .date-1 .text-1 h4,
+#date .date-1 .text-1 span{
+    color: #00000066;
+}
+#date .date-1 .text-2{
+    border-top:1px solid #D0D0D0;
+    border-bottom:1px solid #D0D0D0;
+}
+#date .link h3{
+    font-family: vazirmatn;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 48px;        
+}
+#date .link a:hover{
+    background-color: #d45a4a;
+    scale: 1.1;
+    transition: .4s;
+}
+#date .link a{
+    display: inline-block;
+    background-color: #A63021;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: Vazirmatn;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FDFCFA;
+    text-decoration: none;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: #346671;
+    padding: 80px 120px 120px 120px;
+    margin-bottom: 100px;
+}
+#footer .list{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+#footer .list .last h3{
+    border: none;
+}
+#footer .list h3 span{
+    font-family: Vazirmatn;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: middle;
+    color: #D0D0D04D; 
+}
+#footer .list h3{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: vazirmatn;
+    font-weight: 900;
+    font-size: 48px;
+    color: #ECEBE6CC;
+    border-bottom: 1px solid #00000033;
+    padding: 12px 12px 24px 12px;
+}
+#footer .text{
+    margin-top: 25px;
+    font-family: vazirmatn;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    color: #00000099;    
+}
+

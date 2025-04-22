@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: #2a8260;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 300px;
+  margin: 59px auto;
+}
+.profile {
+  text-align: center;
+}
+.profile-pic {
+  width: 95px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.profile-name {
+  font-size: 21px;
+  font-weight: 700;
+  color: #f3f4f9;
+  margin-top: 11px;
+}
+.job-title {
+  color: #79b39d;
+  font-size: 16px;
+  font-weight: 400;
+}
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+.links {
+  margin: 0 10px;
+}
+.contact{
+  width: 300px;
+  height: 57px;
+  margin-top: 40px;
+}
+.contact-email{
+  padding: 5px 10px;
+}
+.email-addres{
+  color: white;
+  text-decoration: none;
+  margin-left: 85px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.email{
+  color: white;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.contact-phone{
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+.phone{
+  color: white;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.phone-number{
+  color: white;
+  text-decoration: none;
+  margin-left: 110px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.resume-button{
+  width: 300px;
+  height: 46px;
+  border-radius: 12px;
+  background-color: #243B48;
+  margin-top: 240px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 14px;
+}
+.resume-button a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color:rgb(156, 156, 156)
+}
