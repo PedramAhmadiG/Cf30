@@ -16,7 +16,7 @@
     animation-duration: var(--time);
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    border-radius: 150px;
+    border-radius: 150gpx;
     margin-top: 1vh;
     box-shadow: 1px 1px 50px 10px var(--background-2);
 }
