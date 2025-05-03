@@ -111,8 +111,8 @@
     transition: all 0.5s;
 }
 #hero .links .link-1:hover{
-    background-color: #162d3a20;
-    box-shadow: 0 0 15px 0 #162D3A;
+    background-color: #162d3a55;
+    box-shadow: 0 0 8px 0 #162D3A;
 }
 #hero .links .link-1 h3{
     font-family: roboto;
@@ -154,7 +154,7 @@ footer{
     .login{
         width: 390px;
         flex-direction: column-reverse;
-        padding: 16px;
+        padding:16px;
     }
     .container{
         margin-top: -69px;
