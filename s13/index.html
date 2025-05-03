@@ -5,42 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .from {
-            display: flex;
-            flex-direction: column;
-        }
-
-        input:hover {
-            margin-bottom: 5px;
-            border: none;
-            background-color: rgba(0, 255, 255, 0.151);
-            border-radius: 10px;
-        }
-
-        .file input {
-            background-color: red;
-            display: flex;
-
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <form class="from">
-        <div>
-            <input name="first_name" placeholder=" Your Name" type="text">
-        </div>
-        <div>
-            <input type="number">
-        </div>
-        <div class="file">
-            <input type="file">
-        </div>
-        <div>
-            <button>Sunmit</button>
-        </div>
-    </form>
+    <div class="on-off">
+        <input id="On" type="checkbox">
+        <label for="On">
+            <span class="off">OFF</span>
+            <span class="on">ON</span>
+        </label>
+    </div>
+    <select>
+        <option style="background: red; border-radius: 50%; color: green;">1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
 </body>
 
 </html>
