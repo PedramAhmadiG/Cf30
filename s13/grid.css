@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+.grid{
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+}
+.grid .item{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: red;
+}
