@@ -118,3 +118,64 @@ body{
     border-left: 2px solid #29E489;
     padding: 4px 12px;
 }
+#email .text{
+    margin-bottom:16px ;
+}
+#email .text h2{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #ffffff;        
+}
+#email .text span{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #FFFFFF66;
+}
+#email ul{
+    list-style: none;
+    padding: 16px 0 0 0;
+
+}
+#email ul li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 7px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #29292980;
+}
+#email ul .h-m{
+    padding: none;
+    margin: none;
+    border: none;
+}
+#email ul li h2{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 306px;   
+}
+#email ul li span{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #FFFFFF66;    
+}
+#email ul li img{
+    border-radius: 50%;
+    border: 1px solid black;
+}
