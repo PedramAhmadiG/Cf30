@@ -85,3 +85,36 @@ body{
     width: 60px;
     height: 20px;
 }
+#date .text h2{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #ffffff;        
+}
+#date span{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #FFFFFF66;  
+}
+#date h3{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #FFFFFF;    
+}
+#date .text-1{
+    border-left: 2px solid #FFC453;
+    padding: 4px 12px;
+    margin: 16px 0 6px 0;
+}
+#date .text-2{
+    border-left: 2px solid #29E489;
+    padding: 4px 12px;
+}
