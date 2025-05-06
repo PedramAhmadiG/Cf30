@@ -2,8 +2,20 @@
     box-sizing: border-box;
     margin: 0;
 }
+:root{
+    --body-color:#292929;
+    --gap:16px;
+    --margin-size:16px;
+    --text-color:#ffffff;
+    --text-color-span:#ffffff66;
+    --font-size-s:12px;
+    --font-size-m:16px;
+    --font-size-l:20px;
+    --font-size-xl:24px;
+    --font-size-2xl:28px;
+}
 body{
-    background-color: #292929;
+    background-color: var(--body-color);
 }
 .container{
     width: 398px;
@@ -11,8 +23,8 @@ body{
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-top: 30px;
+    gap: var(--gap);
+    margin-top: var(--margin-size);
 }
 #hero{
     padding: 16px;
@@ -34,13 +46,13 @@ body{
     padding: 8px 16px;
     font-family: Inter;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--font-size-m);
     line-height: 22px;    
 }
 #hero ul li .item-1{
-    background-color: #292929;
+    background-color: var(--body-color);
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--text-color);
     box-shadow: 0 0 2px 0 #0000001F,0 4px 8px 0 #00000024;
 }
 #hero div{
@@ -49,7 +61,7 @@ body{
     height: 320px;
     background-size: cover;
     background-position: center;
-    margin-top: 16px;
+    margin-top: var(--margin-size);
     border-radius: 8px;
     box-shadow: 0 0 2px 0 #0000001F,0 4px 8px 0 #00000024;
     padding: 220px 16px 16px 16px;
@@ -57,10 +69,10 @@ body{
 #hero div h1{
     font-family: Inter;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--font-size-l);
     line-height: 26px;
     letter-spacing: 0%;
-    color: #FFFFFF;
+    color: var(--text-color);
     backdrop-filter: blur(100px); 
     padding: 16px;
     border-radius: 8px;
@@ -75,12 +87,12 @@ body{
     position: relative;
 }
 #weather .text{
-    margin-bottom: 42px;
+    margin-bottom: calc(var(--margin-size)*3);
 }
 #weather h1{
     font-family: Inter;
     font-weight: 500;
-    font-size: 28px;
+    font-size: var(--font-size-2xl);
     line-height: 36px;
     letter-spacing: 0%;
     color: #FFFFFFCC;        
@@ -88,10 +100,10 @@ body{
 #weather span{
     font-family: Inter;
     font-weight: 500;
-    font-size: 12px;
+    font-size: var(--font-size-s);
     line-height: 16px;
     letter-spacing: 0%;
-    color: #FFFFFF66;    
+    color: var( --text-color-span);    
 }
 #weather .sun-cloud .sun{
     width: 95px;
@@ -141,54 +153,54 @@ body{
 #date .text h2{
     font-family: Inter;
     font-weight: 500;
-    font-size: 24px;
+    font-size: var(--font-size-xl);
     line-height: 32px;
     letter-spacing: 0%;
-    color: #ffffff;        
+    color: var(--text-color);        
 }
 #date span{
     font-family: Inter;
     font-weight: 500;
-    font-size: 12px;
+    font-size: var(--font-size-s);
     line-height: 16px;
     letter-spacing: 0%;
-    color: #FFFFFF66;  
+    color: var( --text-color-span);  
 }
 #date h3{
     font-family: Inter;
     font-weight: 400;
-    font-size: 16px;
+    font-size:var(--font-size-m);
     line-height: 22px;
     letter-spacing: 0%;
-    color: #FFFFFF;    
+    color: var(--text-color);    
 }
 #date .text-1{
     border-left: 2px solid #FFC453;
     padding: 4px 12px;
-    margin: 16px 0 6px 0;
+    margin: var(--margin-size) 0 6px 0;
 }
 #date .text-2{
     border-left: 2px solid #29E489;
     padding: 4px 12px;
 }
 #email .text{
-    margin-bottom:16px ;
+    margin-bottom:var(--margin-size) ;
 }
 #email .text h2{
     font-family: Inter;
     font-weight: 500;
-    font-size: 24px;
+    font-size: var(--font-size-xl);
     line-height: 32px;
     letter-spacing: 0%;
-    color: #ffffff;        
+    color: var(--text-color);        
 }
 #email .text span{
     font-family: Inter;
     font-weight: 500;
-    font-size: 12px;
+    font-size: var(--font-size-s);
     line-height: 16px;
     letter-spacing: 0%;
-    color: #FFFFFF66;
+    color: var( --text-color-span);
 }
 #email ul{
     list-style: none;
@@ -210,10 +222,10 @@ body{
 #email ul li h2{
     font-family: Inter;
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font-size-m);
     line-height: 22px;
     letter-spacing: 0%;
-    color: #ffffff;
+    color: var(--text-color);
     text-wrap: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; 
@@ -222,10 +234,10 @@ body{
 #email ul li span{
     font-family: Inter;
     font-weight: 500;
-    font-size: 12px;
+    font-size: var(--font-size-s);
     line-height: 16px;
     letter-spacing: 0%;
-    color: #FFFFFF66;    
+    color: var( --text-color-span);    
 }
 #email ul li img{
     border-radius: 50%;
@@ -234,40 +246,40 @@ body{
 #feeling .text h2{
     font-family: Inter;
     font-weight: 500;
-    font-size: 24px;
+    font-size: var(--font-size-xl);
     line-height: 32px;
     letter-spacing: 0%;
-    color: #ffffff;    
+    color: var(--text-color);    
 }
 #feeling .text span{
     font-family: Inter;
     font-weight: 500;
-    font-size: 12px;
+    font-size: var(--font-size-s);
     line-height: 16px;
     letter-spacing: 0%;
-    color: #FFFFFF66;
+    color: var( --text-color-span);
 }
 #feeling ul{
     list-style: none;
     padding: 0;
     display: grid;
-    gap: 16px;
-    margin-top: 16px;
+    gap: var(--gap);
+    margin-top: var(--margin-size);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
 }
 #feeling ul a{
-    background-color: #292929;
+    background-color: var(--body-color);
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 6px;
     border-radius: 8px;
     padding: 8px;
-    color: #FFFFFF;
+    color: var(--text-color);
     font-family: Inter;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--font-size-m);
     line-height: 22px;
     text-decoration: none;
     transition: all 200ms;    
@@ -309,27 +321,27 @@ body{
 #footer h2{
     font-family: Inter;
     font-weight: 500;
-    font-size: 24px;
+    font-size: var(--font-size-xl);
     line-height: 32px;
     letter-spacing: 0%;
-    color: #FFFFFF;       
+    color: var(--text-color);       
 }
 #footer span{
     font-family: Inter;
     font-weight: 500;
-    font-size: 12px;
+    font-size: var(--font-size-s);
     line-height: 16px;
     letter-spacing: 0%;
-    color: #FFFFFF66;    
+    color: var( --text-color-span);    
 }
 #footer h3{
     font-family: Inter;
     font-weight: 500;
-    font-size: 20px;
+    font-size: var(--font-size-l);
     line-height: 32px;
     letter-spacing: 0%;
     color: #FFFFFFCC;
-    margin-top: 29px;    
+    margin-top: calc(var(--margin-size)*2);    
 }
 footer{
     text-align: right;
