@@ -200,3 +200,83 @@ img{
     align-items: center;
     justify-content: space-between;
 }
+#collection{
+    margin: 70px 0;
+}
+#collection h2{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 70px;
+}
+#collection .man{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#collection .man .man-1{
+    width: 500px;
+    padding-top: 72px;
+    position: relative;
+    background-color: #C5C2CA;
+    border-radius: 24px;
+}
+#collection .man .man-1 h3{
+    top: 24px;
+    left: 25px;
+}
+#collection .man .man-1 img{
+    margin-left: auto;
+    margin-right: auto;
+}
+#collection .man h3{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    position: absolute;
+}
+#collection .man a{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #FFFFFF;
+    background-color: #181818;
+    padding: 16px 40px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    text-decoration: none;
+    transition: all 200ms;
+}
+#collection .man a:hover{
+    background-color: #1E1E1E;
+}
+#collection .man .man-2{
+    width: 740px;
+    padding-top: 30px;
+    position: relative;
+    background-color: #FDDE67;
+    border-radius: 24px;
+}
+#collection .man .man-2 h3{
+    top: 72px;
+    right: 98.5px;
+    white-space: pre-line;
+    font-family: Lato;
+    text-align: center;
+}
+#collection .man .man-2 span{
+   font-family: Roboto;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    position: absolute;
+    right: 96.5px;
+    top: 247px;
+    
+}
