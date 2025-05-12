@@ -441,7 +441,7 @@ img{
 #sellers .items-2 .items{
     display: none;
 }
-#sellers .items-2 input:checked ~ label{
+#sellers .items-2 input:checked ~ .button{
     display: none;
 }
 #sellers .items-2 input:checked ~ .items{
