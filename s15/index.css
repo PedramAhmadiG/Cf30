@@ -217,7 +217,8 @@ img{
 #hero .home .mobile-nav{
     position: fixed;
     bottom: 0;
-    width: 360px;
+    left: 0;
+    width: 100%;
     z-index: 999;
     display: none;
 }
@@ -308,7 +309,8 @@ img{
     line-height: 100%;
     position: absolute;
     right: 96.5px;
-    top: 247px;   
+    top: 50%;
+    transform: translateY(-50%);   
 }
 #sellers{
     background-color: #E9E9E9;
@@ -418,7 +420,7 @@ img{
     line-height: 100%;
 }
 #sellers .items-2 .button{
-   font-family: Lato;
+    font-family: Lato;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
@@ -499,4 +501,178 @@ img{
     font-size: 24px;
     line-height: 100%;
     color: #FFFFFF;
+}
+@media( width <= 1200px){
+    .container{
+        width: 360px;
+    }
+    #hero .header{
+        display: none;
+    }
+    #hero .home .mobile-nav{
+        display: block;
+    }
+    #hero .home{
+        position: relative;
+    }
+    #hero .home .text{
+        margin-top: 27px;
+    }
+    #hero .home .text .year{
+        font-size: 30px;
+    }
+    #hero .home .text h1{
+        font-size: 60px;
+        line-height: 50px;
+    }
+    #hero .home .text .off{
+        font-size: 18px;
+    }
+    #hero .home .text div{
+        z-index: 10;
+     }
+    #hero .home .hero-img{
+        position: static;
+    }
+    #hero .home .hero-img .price{
+        display: none;
+    }
+    #hero .home .hero-img .off{
+        display: none;
+    }
+    #hero .home .hero-img .arrow{
+        display: none;
+    }
+    #hero .home .hero-img img{
+        width: 208px;
+        height: 391px;
+        left: 75px;
+        bottom: 0;
+    }
+    #hero .home .hero-img .green-1,.green-2{
+        width: 192.63px;
+        height: 192.63px;
+    }
+    #hero .home .hero-img .green-1{
+        left: 137px;
+        top: 340px;
+
+    }
+    #hero .home .hero-img .green-2{
+        left: 27px;
+        top: 410px;
+    }
+    #hero .home .hero-img .side{
+        left: 140px;
+        z-index: 5;
+        flex-direction: row;
+        top: 640px;
+    }
+    #marks ul{
+        padding: 12px 0;
+    }
+    #marks ul li img{
+        width: 100%;
+        height: 10px;
+    }
+    #collection{
+        margin: 32px 0;
+    }
+    #collection h2{
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 32px;
+        margin-left: 15px;
+    }
+    #collection .man{
+        flex-direction: column;
+        gap: 32px;
+    }
+    #collection .man h3{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    #collection .man .man-1{
+        width: 330px;
+    }
+    #collection .man .man-1 img{
+        width: 197px;
+        height: 339px;
+    }
+    #collection .man .man-2{
+        width: 330px;
+    }
+    #collection .man .man-2 img{
+        width: 189px;
+        height: 216px;
+    }
+    #collection .man .man-2 h3{
+        right: 18px;
+        top: 20px;
+    }
+    #collection .man .man-2 span{
+        font-size: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 40px;
+    }
+    #sellers{
+        padding: 32px 0;
+    }
+    #sellers h2{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    #sellers .items{
+        margin-top: 32px;
+        overflow: auto;
+    }
+    #sellers .items li{
+        width: 100%;
+    }
+    #sellers .items li img{
+        width: 132.9px;
+        height: 148.3px;
+    }
+    #sellers .items li .img-items{
+        padding: 40px 50px;
+    }
+    #sellers .items li .text h4{
+        font-size: 16px;
+    }
+    #sellers .items li .text span{
+        font-size: 14px;
+    }
+    #sellers .items-2 .button{
+        display: none;
+    }
+    #footer{
+        background: #3B5F47;
+        padding: 32px 0 62px 0;
+    }
+    #footer .footer-items .shoes{
+        display: none;
+    }
+    #footer .footer-items .time{
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 32px;
+    }
+    #footer .footer-items .time h3{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    #footer .footer-items .time ul{
+        gap: 12px;
+    }
+    #footer .footer-items .time ul h4{
+        font-size: 24px;
+        line-height: 24px;
+        padding: 12px 13px;
+        margin-bottom: 6px;
+    }
+    #footer .footer-items .time ul span{
+        font-size: 12px;
+    }
 }
