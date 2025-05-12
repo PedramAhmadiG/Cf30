@@ -2,6 +2,23 @@
     box-sizing: border-box;
     margin: 0;
 }
+:root{
+    --Font-Lato:Lato;
+    --Font-Roboto:roboto;
+    --color-white:#FFFFFF;
+    --color-white-opacity:#FFFFFF4D;
+    --color-yellow:#FDDE67;
+    --color-yellow-hover:#FFEB9D;
+    --color-balck:#181818;
+    --color-balck-hover:#1E1E1E;
+    --color-green:#3A5E46;
+    --transition:200ms;
+    --border-radius-s:6px;
+    --border-radius-m:8px;
+    --border-radius-l:21px;
+    --border-radius-xl:24px;
+    --border-radius-xxl:50%;
+}
 .container{
     width: 1320px;
     margin-left: auto;
@@ -12,7 +29,7 @@ img{
     user-select: none;
 }
 #hero{
-    background: linear-gradient(to bottom right, #2A4032 , #3A5E46);
+    background: linear-gradient(to bottom right, #2A4032 , var(--color-green));
     padding-top: 25px;
 }
 #hero .header{
@@ -21,11 +38,11 @@ img{
     align-items: center;
 }
 #hero .header span{
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 900;
     font-size: 36px;
     line-height: 40px;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 #hero .header .nav-list{
     display: flex;
@@ -37,27 +54,27 @@ img{
 #hero .header .nav-list li a{
     padding: 8px;
     text-decoration: none;
-    color: #FFFFFF4D;
-    font-family: Lato;
+    color: var(--color-white-opacity);
+    font-family: var(--Font-Lato);
     font-weight: 400;
     font-size: 18px;
     line-height: 40px;
-    transition: all 200ms;
+    transition: all var(--transition);
 }
 #hero .header .nav-list li a:hover{
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 #hero .header .shop img{
     display: block;
 } 
 #hero .header .shop{
-    background-color: #FDDE67;
+    background-color: var(--color-yellow);
     padding: 12px;
-    border-radius: 50%;
-    transition: all 200ms;
+    border-radius: var(--border-radius-xxl);
+    transition: all var(--transition);
 }
 #hero .header .shop:hover{
-    background-color:#FFEB9D;
+    background-color:var(--color-yellow-hover);
 }
 #hero .home{
     display: flex;
@@ -71,23 +88,23 @@ img{
     margin-top: 83px;
 }
 #hero .home .text .year{
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 400;
     font-style: italic;
     font-size: 60px;
-    color: #FFFFFF4D;
+    color: var(--color-white-opacity);
 }
 #hero .home .text h1{
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 900;
     font-size: 112px;
     line-height: 100px;
-    color: #FFFFFF;
+    color: var(--color-white);
     letter-spacing: 13px;
     white-space: pre-line;
 }
 #hero .home .text .off{
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 400;
     font-size: 25px;
     color: #FFFFFFCC;
@@ -98,18 +115,18 @@ img{
 #hero .home .text div a{
     margin-bottom: -25px;
     text-decoration: none;
-    background-color: #FDDE67;
+    background-color: var(--color-yellow);
     padding: 16px 40px;
     border-radius: 6px;
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
-    color: #181818;
-    transition: all 200ms;
+    color: var(--color-balck);
+    transition: all var(--transition);
 }
 #hero .home .text div a:hover{
-    background-color: #FFEB9D;
+    background-color: var(--color-yellow-hover);
 }
 #hero .home .hero-img{
     position: relative;
@@ -127,15 +144,15 @@ img{
     position: absolute;
     top: 79px;
     left: 143px;
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 500;
     font-size: 36px;
     line-height: 100%;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 #hero .home .hero-img .off{
-    color: #181818;
-    font-family: Roboto;
+    color: var(--color-balck);
+    font-family: var(--Font-Roboto);
     font-weight: 700;
     font-size: 26px;
     line-height: 100%;
@@ -143,14 +160,14 @@ img{
     white-space: pre-line;
     background: #FDDE67;
     position: absolute;
-    border-radius: 50%;
+    border-radius: var(--border-radius-xxl);
     top: 114px;
     left: 205px;
     z-index: 3;
 }
 #hero .home .hero-img .green-1,.green-2{
     position: absolute;
-    border-radius: 50%;
+    border-radius: var(--border-radius-xxl);
     width: 308.5px;
     height: 308.5px;
     background-color: #1B2D22;
@@ -173,11 +190,8 @@ img{
     gap: 12px;
     cursor: pointer;
 }
-#hero .home .arrow div{
-    background-color: red;
-}
 #hero .home .arrow svg:hover path{
-    fill: #FFFFFF;
+    fill: var(--color-white);
 }
 #hero .home .side{
     position: absolute;
@@ -192,14 +206,14 @@ img{
     display: none;
 }
 #hero .home .side input:checked ~ label{
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     width: 21px;
     height: 21px;
 }
 #hero .home .side label{
     width: 16px;
     height: 16px;
-    border-radius: 21px;
+    border-radius: var(--border-radius-l);
     background-color: #FFFFFF33;
     display: block;
     transition: all 400ms ease-in-out ;
@@ -208,7 +222,7 @@ img{
 #hero .home .mobile-nav ul{
     list-style: none;
     padding: 0;
-    background-color: #FDDE67;
+    background-color: var(--color-yellow);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -223,7 +237,7 @@ img{
     display: none;
 }
 #marks{
-    background-color: #181818;
+    background-color: var(--color-balck);
 }
 #marks ul{
     list-style: none;
@@ -236,11 +250,10 @@ img{
     margin: 70px 0;
 }
 #collection h2{
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 400;
     font-size: 48px;
     line-height: 48px;
-    color: #000000;
     margin-bottom: 70px;
 }
 #collection .man{
@@ -253,7 +266,7 @@ img{
     padding-top: 72px;
     position: relative;
     background-color: #C5C2CA;
-    border-radius: 24px;
+    border-radius: var(--border-radius-xl);
 }
 #collection .man .man-1 h3{
     top: 24px;
@@ -264,46 +277,46 @@ img{
     margin-right: auto;
 }
 #collection .man h3{
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 700;
     font-size: 24px;
     line-height: 40px;
     position: absolute;
 }
 #collection .man a{
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
-    color: #FFFFFF;
-    background-color: #181818;
+    color: var(--color-white);
+    background-color: var(--color-balck);
     padding: 16px 40px;
     border-radius: 6px;
     position: absolute;
     bottom: 24px;
     right: 24px;
     text-decoration: none;
-    transition: all 200ms;
+    transition: all var(--transition);
 }
 #collection .man a:hover{
-    background-color: #1E1E1E;
+    background-color: var(--color-balck-hover);
 }
 #collection .man .man-2{
     width: 740px;
     padding-top: 30px;
     position: relative;
-    background-color: #FDDE67;
-    border-radius: 24px;
+    background-color: var(--color-yellow);
+    border-radius: var(--border-radius-xl);
 }
 #collection .man .man-2 h3{
     top: 72px;
     right: 98.5px;
     white-space: pre-line;
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     text-align: center;
 }
 #collection .man .man-2 span{
-   font-family: Roboto;
+   font-family: var(--Font-Roboto);
     font-weight: 700;
     font-size: 48px;
     line-height: 100%;
@@ -317,7 +330,7 @@ img{
     padding: 70px 0;
 }
 #sellers h2{
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 400;
     font-size: 48px;
     line-height: 48px; 
@@ -346,18 +359,18 @@ img{
 #sellers .items li .img-items{
     width: 100%;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     padding: 54px 0;
-    border-radius: 24px;
+    border-radius: var(--border-radius-xl);
 }
 #sellers .items li .text h4{
-    font-family: Roboto;
+    font-family: var(--Font-Roboto);
     font-weight: 500;
     font-size: 18px;
     line-height: 100%;
 }
 #sellers .items li .text span{
-    font-family: Roboto;
+    font-family: var(--Font-Roboto);
     font-weight: 300;
     font-size: 16px;
     line-height: 100%;
@@ -368,12 +381,12 @@ img{
 }
 #sellers .items li .text a{
     padding: 11px;
-    background-color: #FDDE67;
-    border-radius: 6px;
-    transition: all 200ms;
+    background-color: var(--color-yellow);
+    border-radius: var(--border-radius-s);
+    transition: all var(--transition);
 }
 #sellers .items li .text a:hover{
-    background-color: #FFEB9D;
+    background-color: var(--color-yellow-hover);
 }
 #sellers .items li .text img{
     width: 18px;
@@ -400,7 +413,7 @@ img{
   stroke: black;
   stroke-width: 1;
   cursor: pointer;
-  transition: fill 200ms;
+  transition: fill var(--transition);
 }
 
 #sellers .items li .heart-checkbox:checked ~ .heart-label svg {
@@ -410,29 +423,29 @@ img{
     position: absolute;
     top: 16px;
     left: 16px;
-    background-color: #3A5E46;
+    background-color: var(--color-green);
     padding: 3px 6px;
-    border-radius: 6px;
-    color: #FFFFFF;
-    font-family: Roboto;
+    border-radius: var(--border-radius-s);
+    color: var(--color-white);
+    font-family: var(--Font-Roboto);
     font-weight: 300;
     font-size: 12px;
     line-height: 100%;
 }
 #sellers .items-2 .button{
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
     padding: 16px 40px;
-    color: #FFFFFF;
-    background-color: #181818;
-    border-radius: 6px;
-    transition: all 200ms;
+    color: var(--color-white);
+    background-color: var(--color-balck);
+    border-radius: var(--border-radius-s);
+    transition: all var(--transition);
     cursor: pointer;
 }
 #sellers .items-2 .button:hover{
-    background-color: #1E1E1E;
+    background-color: var(--color-balck-hover);
 }
 #sellers .items-2{
     text-align: center;
@@ -458,7 +471,7 @@ img{
     gap: 62px;
 }
 #footer .footer-items .shoes h2{
-    font-family: Roboto;
+    font-family: var(--Font-Roboto);
     font-weight: 700;
     font-size: 64px;
     line-height: 48px;
@@ -470,11 +483,11 @@ img{
     justify-content: space-between;
 }
 #footer .footer-items .time h3{
-    font-family: Lato;
+    font-family: var(--Font-Lato);
     font-weight: 700;
     font-size: 64px;
     line-height: 48px;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 #footer .footer-items .time ul{
     list-style: none;
@@ -485,22 +498,22 @@ img{
     text-align: center;
 }
 #footer .footer-items .time ul h4{
-    font-family: Roboto;
+    font-family: var(--Font-Roboto);
     font-weight: 700;
     font-size: 64px;
     line-height: 48px;
-    color: #FFFFFF;
+    color: var(--color-white);
     padding: 32px 40px;
     background-color: #18181840;
-    border-radius: 8px;
+    border-radius: var(--border-radius-m);
     margin-bottom: 12px;
 }
 #footer .footer-items .time ul span{
-    font-family: Roboto;
+    font-family: var(--Font-var(--Font-var(--Font-Roboto)));
     font-weight: 300;
     font-size: 24px;
     line-height: 100%;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 @media( width <= 1200px){
     .container{
@@ -618,6 +631,7 @@ img{
     }
     #sellers{
         padding: 32px 0;
+        margin-bottom: -50px;
     }
     #sellers h2{
         font-size: 32px;
