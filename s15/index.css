@@ -9,6 +9,7 @@
 }
 img{
     display: block;
+    user-select: none;
 }
 #hero{
     background: linear-gradient(to bottom right, #2A4032 , #3A5E46);
@@ -170,6 +171,7 @@ img{
     display: flex;
     align-items: center;
     gap: 12px;
+    cursor: pointer;
 }
 #hero .home .arrow div{
     background-color: red;
@@ -201,6 +203,7 @@ img{
     background-color: #FFFFFF33;
     display: block;
     transition: all 400ms ease-in-out ;
+    cursor: pointer;
 }
 #hero .home .mobile-nav ul{
     list-style: none;
@@ -305,6 +308,142 @@ img{
     line-height: 100%;
     position: absolute;
     right: 96.5px;
-    top: 247px;
-    
+    top: 247px;   
+}
+#sellers{
+    background-color: #E9E9E9;
+    padding: 70px 0;
+}
+#sellers h2{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px; 
+    margin-bottom: 70px;   
+}
+#sellers .items{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 35px;
+    margin-bottom: 70px;
+}
+#sellers .items li{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+#sellers .items li img{
+    width: 214.23px;
+    height: 238.98px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sellers .items li .img-items{
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 54px 0;
+    border-radius: 24px;
+}
+#sellers .items li .text h4{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+}
+#sellers .items li .text span{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    color: #00000099;
+}
+#sellers .items li .text del{
+    color: #00000033;
+}
+#sellers .items li .text a{
+    padding: 11px;
+    background-color: #FDDE67;
+    border-radius: 6px;
+    transition: all 200ms;
+}
+#sellers .items li .text a:hover{
+    background-color: #FFEB9D;
+}
+#sellers .items li .text img{
+    width: 18px;
+    height: 18px;
+}
+#sellers .items li .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sellers .items li .heart{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+#sellers .items li .heart-checkbox {
+  display: none;
+}
+
+#sellers .items li .heart-label svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+  cursor: pointer;
+  transition: fill 200ms;
+}
+
+#sellers .items li .heart-checkbox:checked ~ .heart-label svg {
+  fill: red;
+}
+#sellers .items li .off{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: #3A5E46;
+    padding: 3px 6px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+}
+#sellers .items-2 .button{
+   font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 16px 40px;
+    color: #FFFFFF;
+    background-color: #181818;
+    border-radius: 6px;
+    transition: all 200ms;
+    cursor: pointer;
+}
+#sellers .items-2 .button:hover{
+    background-color: #1E1E1E;
+}
+#sellers .items-2{
+    text-align: center;
+}
+#sellers .items-2 input{
+    display: none;
+}
+#sellers .items-2 .items{
+    display: none;
+}
+#sellers .items-2 input:checked ~ label{
+    display: none;
+}
+#sellers .items-2 input:checked ~ .items{
+    display: flex;
 }
