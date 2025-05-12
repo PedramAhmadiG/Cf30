@@ -171,8 +171,36 @@ img{
     align-items: center;
     gap: 12px;
 }
-#hero .home .arrow input{
+#hero .home .arrow div{
+    background-color: red;
+}
+#hero .home .arrow svg:hover path{
+    fill: #FFFFFF;
+}
+#hero .home .side{
+    position: absolute;
+    right: 0;
+    top: 198px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items: center;
+}
+#hero .home .side input{
     display: none;
+}
+#hero .home .side input:checked ~ label{
+    background-color: #FFFFFF;
+    width: 21px;
+    height: 21px;
+}
+#hero .home .side label{
+    width: 16px;
+    height: 16px;
+    border-radius: 21px;
+    background-color: #FFFFFF33;
+    display: block;
+    transition: all 400ms ease-in-out ;
 }
 #hero .home .mobile-nav ul{
     list-style: none;
@@ -191,7 +219,7 @@ img{
     display: none;
 }
 #marks{
-        background-color: #181818;
+    background-color: #181818;
 }
 #marks ul{
     list-style: none;
