@@ -367,13 +367,11 @@ img{
     font-family: var(--Font-Roboto);
     font-weight: 500;
     font-size: 18px;
-    line-height: 100%;
 }
 #sellers .items li .text span{
     font-family: var(--Font-Roboto);
     font-weight: 300;
     font-size: 16px;
-    line-height: 100%;
     color: #00000099;
 }
 #sellers .items li .text del{
